@@ -1,0 +1,11 @@
+{
+    "HomePage": {
+      "title": "ზდაროვა რუსკი!",
+      "about": "Go to the about page"
+    },
+    "Navbar": {
+      "about": "О нас",
+      "services": "Сервис",
+      "contact": "Контакт"
+    }
+  }

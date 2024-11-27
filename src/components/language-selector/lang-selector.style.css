@@ -1,0 +1,15 @@
+.language-dropdown {
+  padding: 5px;
+  font-size: 0.775rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  width: auto;
+  margin-bottom: 5px;
+}
+
+.language-dropdown:focus {
+  outline: none;
+  border-color: hsla(27, 18%, 66%, 1);/* Highlight on focus */
+}
