@@ -1,0 +1,48 @@
+.serviceBlogContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  gap: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.firstRow, .secondRow{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+/* .secondRow {
+  display: flex;
+  gap: 30px;
+} */
+.rowCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex: 1;
+}
+
+.cardTitle {
+  color: hsla(27, 18%, 66%, 1);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.cardDesc {
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+
+.serviceBlogImage {
+  object-fit: cover;
+  width: 352px;
+  height: 335px;
+}

@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
+import ButtonComponent from "@/components/buttonComponent/Button";
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -14,6 +15,7 @@ export default function Home() {
           <p className={styles.infoParagraph}>
           {t("description")}
           </p>
+          <ButtonComponent to={"/about"} buttonPlaceholder={"Read More"}></ButtonComponent>
         </div>
       </div>
       <div className={styles.rightSection}>

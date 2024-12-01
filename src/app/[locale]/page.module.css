@@ -1,5 +1,5 @@
 .homeContainer {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -12,14 +12,15 @@
 .rightSection {
   flex: 1; /* Take up 50% of the width */
   background-color: #31363f;
+  height: 100vh;
 }
 
 .homeImage {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  display:block;
-  object-position: 49.107142857142854% 22.619047619047617%
+  display: block;
+  object-position: 49.107142857142854% 22.619047619047617%;
 }
 
 .infoContainer {
@@ -38,8 +39,8 @@
   font-size: 16px;
   font-weight: 200;
   line-height: 1.9;
+  margin-bottom: 60px;
 }
-
 
 /* 
 background-color: hsla(27, 18%, 66%, 1); 

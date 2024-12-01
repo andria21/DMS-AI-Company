@@ -28,10 +28,10 @@ function Navbar() {
       <Link className={styles.logo} href={"/"}>DM</Link>
       <div className={styles.socialsContainer}>
         <LangSelector />
-        <Link className={styles.socials} href={"/about"}>
+        <Link className={styles.socials} href={"https://www.instagram.com/dmsaiautomationagency/"}>
           <Image className={styles.socialLogo} src={InstaSVG} height={20} width={20} alt="Facebook Logo" />
         </Link>
-        <Link className={styles.socials} href={"/about"}>
+        <Link className={styles.socials} href={"https://www.facebook.com/profile.php?id=61568200016744"}>
           <Image className={styles.socialLogo} src={FbSVG} height={20} width={20} alt="Facebook Logo" />
         </Link>
 
