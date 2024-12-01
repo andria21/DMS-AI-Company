@@ -5,6 +5,7 @@
   font-weight: 200;
   font-style: normal;
   text-align: center;
+  
 }
 .customHr {
   border: none;
@@ -38,3 +39,8 @@
   font-size: 14.4px;
 }
 
+@media (max-width: 1252px) {
+  .footerContainer {
+    height: 270px;
+  }
+}

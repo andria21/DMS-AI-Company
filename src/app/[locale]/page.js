@@ -10,13 +10,12 @@ export default function Home() {
   return (
     <div className={styles.homeContainer}>
       <div className={styles.leftSection}>
-        <div className={styles.infoContainer}>
-          <p className={styles.infoHeading}>{t("title")}</p>
-          <p className={styles.infoParagraph}>
-          {t("description")}
-          </p>
-          <ButtonComponent to={"/about"} buttonPlaceholder={"Read More"}></ButtonComponent>
-        </div>
+        <p className={styles.infoHeading}>{t("title")}</p>
+        <p className={styles.infoParagraph}>{t("description")}</p>
+        <ButtonComponent
+          to={"/about"}
+          buttonPlaceholder={"Read More"}
+        ></ButtonComponent>
       </div>
       <div className={styles.rightSection}>
         <Image
