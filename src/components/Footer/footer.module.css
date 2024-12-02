@@ -1,11 +1,10 @@
 .footerContainer {
   height: 200px;
-  margin: 10px 200px 0px 200px;
+  margin: 10px 200px;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
   text-align: center;
-  
 }
 .customHr {
   border: none;
@@ -13,14 +12,14 @@
   background: hsla(27, 18%, 66%, 1);
   margin: 10px 0;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+
   border-radius: 5px;
+  min-width: 400px;
 }
 
 .followHeading {
   color: hsla(27, 18%, 66%, 1);
-  font-size: 3.120rem;
+  font-size: 3.12rem;
 }
 
 .termsContainer {
@@ -41,6 +40,45 @@
 
 @media (max-width: 1252px) {
   .footerContainer {
-    height: 270px;
+    /* height: 270px; */
+    text-align: center;
+  }
+  .followHeading {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 938px) {
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0px 200px;
+  }
+  .termsContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 788px) {
+  .footerContainer {
+    padding: 0px 30px;
+  }
+}
+
+@media (max-width: 465px) {
+  .footerContainer {
+    padding: 0px 10px;
+  }
+  .customHr {
+    min-width: 100px;
+  }
+  .followHeading {
+    display: none;
   }
 }

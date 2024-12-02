@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 .navbarContainer {
   position: absolute;
   display: flex;
@@ -22,6 +23,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
+  z-index: 99999;
 }
 
 .logo {
@@ -30,11 +32,12 @@
   font-weight: 200;
   font-style: normal;
   font-size: 3.375rem;
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-9%, -50%);
+  transform: translate(-9%, -50%); */
   color: #ffffff;
+  z-index: 99999;
 }
 
 .link {
@@ -46,4 +49,180 @@
 .socialLogo {
   object-fit: contain;
   /* margin-top: 6px; */
+}
+
+.langSelectorSmall {
+  display: none;
+}
+
+.hamburgerLinksContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: hsla(0, 3%, 13%, 1);
+  z-index: 100;
+  overflow: hidden;
+  transition: top 0.4s ease;
+  opacity: 0; /* Initially hidden */
+  transform: scale(0.95); /* Slightly smaller */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.bar {
+  width: 40px;
+  height: 45px;
+  object-fit: cover;
+  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(13deg) brightness(104%)
+    contrast(101%);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  z-index: 999;
+}
+
+.closeBtn {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(13deg) brightness(104%)
+    contrast(101%);
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* From Uiverse.io by NAKAMOZ */
+/* Hide the default checkbox */
+.burger input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  z-index: 99999;
+}
+
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.5em;
+  width: 1.3em;
+}
+
+.checkmark span {
+  width: 40px;
+  height: 2px;
+  background-color: #ccc;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.checkmark span:nth-child(1) {
+  top: 10%;
+}
+
+.checkmark span:nth-child(2) {
+  top: 50%;
+}
+
+.checkmark span:nth-child(3) {
+  top: 90%;
+}
+
+.burger input:checked + .checkmark span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  -webkit-transform: translateY(-50%) rotate(45deg);
+  -moz-transform: translateY(-50%) rotate(45deg);
+  -ms-transform: translateY(-50%) rotate(45deg);
+  -o-transform: translateY(-50%) rotate(45deg);
+  background-color: hsla(27, 18%, 66%, 1);
+}
+
+.burger input:checked + .checkmark span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  -moz-transform: translateY(-50%) rotate(-45deg);
+  -ms-transform: translateY(-50%) rotate(-45deg);
+  -o-transform: translateY(-50%) rotate(-45deg);
+  background-color: hsla(27, 18%, 66%, 1);
+}
+
+.burger input:checked + .checkmark span:nth-child(3) {
+  transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+  -moz-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -o-transform: translateX(-50px);
+  opacity: 0;
+}
+
+@media (max-width: 1012px) {
+  .burger {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .linksContainer {
+    display: none;
+  }
+  .link {
+    font-size: 44px;
+    color: hsla(27, 18%, 66%, 1);
+  }
+  .navbarContainer {
+    padding: 50px 40px;
+  }
+  .active .logo {
+    color: hsla(27, 18%, 66%, 1);
+  }
+  .active .hamburgerLinksContainer {
+    opacity: 1; /* Fully visible */
+    transform: scale(1);
+  }
+  .langSelectorSmall {
+    display: block;
+    z-index: 99999;
+  }
+  .socialsContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbarContainer {
+    padding: 30px 20px;
+  }
 }

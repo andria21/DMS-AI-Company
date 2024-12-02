@@ -5,14 +5,20 @@ import "./lang-selector.style.css";
 import { useRouter } from "next/navigation";
 
 export default function LangSelector() {
-  const [language, setLanguage] = useState("en"); // Default is English
+  const [language, setLanguage] = useState("en");
   const router = useRouter();
 
   const handleLanguageChange = (event) => {
     const selectedLanguage = event.target.value;
-    setLanguage(selectedLanguage);
 
-    router.push(selectedLanguage);
+    const currentPath = window.location.pathname;
+
+    const segments = currentPath.split("/").filter(Boolean);
+    segments[0] = selectedLanguage;
+    const newPath = `/${segments.join("/")}`;
+
+    router.push(newPath);
+
     localStorage.setItem("preferredLanguage", selectedLanguage);
   };
 

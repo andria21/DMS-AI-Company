@@ -13,3 +13,11 @@
   outline: none;
   border-color: hsla(27, 18%, 66%, 1);/* Highlight on focus */
 }
+
+
+@media (max-width: 1012px) {
+  .language-dropdown {
+    background-color: hsla(27, 18%, 66%, 1);
+    border-color: hsla(27, 18%, 66%, 1);
+  }
+}

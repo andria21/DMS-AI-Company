@@ -4,6 +4,8 @@ import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import ButtonComponent from "@/components/buttonComponent/Button";
 
+import testDM from "../../../public/DM_BG.png";
+
 export default function Home() {
   const t = useTranslations("HomePage");
 
@@ -21,7 +23,7 @@ export default function Home() {
         <Image
           className={styles.homeImage}
           src={
-            "https://images.squarespace-cdn.com/content/v1/62e7d6c0f7b4911108ec6c97/1659360971870-SDPREFV3MBDJAT1HSU7T/karina-tess-Tupz7k-JziU-unsplash-e.jpg"
+            "https://images.squarespace-cdn.com/content/v1/62e7d6c0f7b4911108ec6c97/1659360968488-O9ZPETNNZFEG71SFMY92/image-asset.jpeg"
           }
           width={4000}
           height={3750}
