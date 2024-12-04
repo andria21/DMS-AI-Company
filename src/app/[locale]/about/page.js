@@ -18,7 +18,7 @@ function About() {
             <p className={styles.infoParagraph}>{t("description")}</p>
             <ButtonComponent
               to={"/services"}
-              buttonPlaceholder={"Services"}
+              buttonPlaceholder={t("serviceButton")}
             ></ButtonComponent>
           </div>
         </div>
@@ -38,10 +38,9 @@ function About() {
         <div >
           <div className={styles.aboutSectionQuote}>
             <h1 className={styles.quote}>
-              “Join the movement with DM AI Bots—your ultimate management
-              solution!”
+            {t("quoteOne")}
             </h1>
-            <p className={styles.companyName}>DM's AI Automation Company</p>
+            <p className={styles.companyName}>{t("title")}</p>
           </div>
           <div className={styles.customHr}></div>
           <div className={styles.blogContainer}>
@@ -73,11 +72,11 @@ function About() {
           <div className={styles.customHr}></div>
           <div className={styles.joinUsContainer}>
             <h1 className={styles.quote}>
-              AI bots reshape the future of business.
+            {t("quoteTwo")}
             </h1>
             <ButtonComponent
               to={"/services"}
-              buttonPlaceholder={"Let's Work Together"}
+              buttonPlaceholder={t("workTogetherButton")}
             ></ButtonComponent>
           </div>
         </div>

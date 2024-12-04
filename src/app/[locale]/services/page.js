@@ -30,7 +30,7 @@ function Services(props) {
             <p className={styles.infoParagraph}>{t("description")}</p>
             <ButtonComponent
               to={"/contact"}
-              buttonPlaceholder={"Contact Us"}
+              buttonPlaceholder={t("contactButton")}
             ></ButtonComponent>
           </div>
         </div>
@@ -38,19 +38,19 @@ function Services(props) {
       <div className={styles.servicesSectionContainer}>
       <div className={styles.aboutSectionQuote}>
           <h1 className={styles.quote}>
-            Smart businesses invest in smarter AI.
+          {t("quoteOne")}
           </h1>
-          <p className={styles.companyName}>DM's AI Automation Company</p>
+          <p className={styles.companyName}>{t("companyName")}</p>
           <div className={styles.customHr}></div>
           <ServiceCard />
           <div className={styles.customHr}></div>
           <div className={styles.joinUsContainer}>
             <h1 className={styles.quote}>
-              Business thrives when powered by AI.
+              {t("quoteTwo")}
             </h1>
             <ButtonComponent
               to={"/contact"}
-              buttonPlaceholder={"Let's Work Together"}
+              buttonPlaceholder={t("workTogetherButton")}
             ></ButtonComponent>
           </div>
         </div>

@@ -5,6 +5,7 @@
   font-style: normal;
   margin-bottom: 100px;
   width: 100%;
+  min-height: 100vh;
 }
 
 .leftSection {
@@ -14,20 +15,33 @@
   padding-top: 300px;
   padding-left: 200px;
   padding-right: 200px;
+  /* width: 100%;
+  max-width: 1020px; */
+  /* padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
 }
 .rightSection {
   width: 48%;
   background-color: #31363f;
   /* height: 900px; */
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .homeImage {
-  object-fit: cover;
+  /* object-fit: cover;
   width: 100%;
-  height: 100vh;
-  /* object-position: 49.107142857142854% 22.619047619047617%; */
-  display: block;
+  height: 100vh; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* display: block; */
+    /* object-position: 49.107142857142854% 22.619047619047617%; */
 }
 
 /* .infoContainer {
@@ -44,7 +58,7 @@
   margin-bottom: 20px;
 }
 .infoParagraph {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 200;
   line-height: 1.9;
   margin-bottom: 60px;

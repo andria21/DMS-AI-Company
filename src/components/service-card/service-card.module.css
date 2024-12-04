@@ -56,6 +56,7 @@
   }
   .serviceBlogImage {
     width: 100%;
+      object-position: 49.107142857142854% 22.619047619047617%;
   }
   .secondRow .rowCard {
     flex-direction: column-reverse;

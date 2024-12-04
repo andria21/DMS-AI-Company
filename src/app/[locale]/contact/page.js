@@ -10,7 +10,11 @@ import InstaSVG from "../../../../public/instaLogo.png";
 import { Link } from "@/i18n/routing";
 import ButtonComponent from "@/components/buttonComponent/Button";
 
+import { useTranslations } from "next-intl";
+
 function Contact() {
+  const t = useTranslations("Contact");
+
   const [isLoading, setIsLoading] = useState(false);
   const handleMessageSubmit = async (e) => {
     e.preventDefault();
@@ -44,11 +48,9 @@ function Contact() {
   return (
     <div className={styles.contactContainer}>
       <dir className={styles.contactInfoContainer}>
-        <h1 className={styles.contactInfoHeading}>Contact Us</h1>
+        <h1 className={styles.contactInfoHeading}>{t("title")}</h1>
         <p className={styles.contactInfoP}>
-          Lorem ipsum dolor sit amet, consec lorem ipsum dolor sit amet,
-          consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-          ut laoreet dolore.
+        {t("description")}
         </p>
         <div className={styles.customHr}></div>
         <div className={styles.mailInfo}>

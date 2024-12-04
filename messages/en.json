@@ -9,13 +9,30 @@
     "contact": "Contact"
   },
   "About": {
-    "title": "About DM's AI Automation Company",
+    "title": "DM's AI Automation Company",
     "description": "I'm sure you have heard the news that AI is transforming the business world. but have you met the ultimate game changer?",
     "textOne": "I'm sure you have heard the news that AI is transforming the business world. but have you met the ultimate game changer? DM's AI Bots. Imagine having a team that works tirelessly, 24/7 without a break. DM's AI Bots are here to tackle your management challenges head-on. Faster responses, smarter decisions and stream lined process that's smoother than ever. need to handle customer service? DM's Ai bots got it. need to manage schedules and appointments? DM's AI bots have you covered. they are not just assistants, they're your business champions.",
-    "textTwo": "by automating routine tasks, you free up time to focus on what truly matters growing your business, and with their flexibility, they adapt to your unique needs and scale as you grow. imagine the possibilities, increased efficiency, happier clients and more time for strategic planning. It's time to embrace the future of management, so are you ready to revolutionize your business? join the movement with DM's AI Bots, your ultimate management solution!"
+    "textTwo": "by automating routine tasks, you free up time to focus on what truly matters growing your business, and with their flexibility, they adapt to your unique needs and scale as you grow. imagine the possibilities, increased efficiency, happier clients and more time for strategic planning. It's time to embrace the future of management, so are you ready to revolutionize your business? join the movement with DM's AI Bots, your ultimate management solution!",
+    "quoteOne": "Join the movement with DM AI Bots—your ultimate management solution!",
+    "quoteTwo": "AI bots reshape the future of business.",
+    "serviceButton": "Services",
+    "workTogetherButton": "Let's Work Together"
   },
   "Services": {
     "title": "DM's AI Automation Company Services",
-    "description": "Imagine the possibilities: increased efficiency, happier clients, and more time for strategic planning. It's time to embrace the future of management. Are you ready to revolutionize your business?"
+    "description": "Imagine the possibilities: increased efficiency, happier clients, and more time for strategic planning. It's time to embrace the future of management. Are you ready to revolutionize your business?",
+    "contactButton": "Contact Us",
+    "quoteOne": "Smart businesses invest in smarter AI.",
+    "companyName": "DM's AI Automation Company",
+    "imageTextOne": "Artificial intelligence automation helps businesses streamline processes, reducing time and resource expenditure. AI provides 24/7 support, offering fast and accurate responses to customers, which increases customer satisfaction. With its assistance, operational errors are minimized, and efficiency is boosted.",
+    "imageTextOneTitle": "DM's AI Medic",
+    "imageTextTwo": "The first Georgian artificial intelligence automation for your health introduces Georgia's first innovative AI automation, designed to simplify your life! Scheduling a visit with your doctor has never been easier. Meet the technology of the future today! Plan your doctor's visit easily with the help of Georgian AI automation!",
+    "imageTextTwoTitle": "DM's AI Support",
+    "quoteTwo": "Business thrives when powered by AI.",
+    "workTogetherButton": "Let's Work Together"
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "description": "DM's AI Bots enhance business operations by automating tasks, improving efficiency, and delivering real-time customer support. They adapt to your business needs and scale as you grow, making management easier and more effective."
   }
 }

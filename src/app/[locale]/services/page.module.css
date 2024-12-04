@@ -213,7 +213,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 505px) {
   .aboutSectionQuote {
     padding-top: 80px;
   }
@@ -250,6 +250,9 @@
   }
   .textOne {
     font-size: 11px;
+  }
+  .aboutSectionQuote {
+    padding: 20px 0px;
   }
 }
 

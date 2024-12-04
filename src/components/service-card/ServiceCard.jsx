@@ -2,12 +2,16 @@ import React from "react";
 import Image from "next/image";
 import styles from "./service-card.module.css";
 
-import dm1 from "../../../public/dm1.jpg";
-import dm2 from "../../../public/dm2.jpg";
-import dm3 from "../../../public/dm5.jpg";
-import dm4 from "../../../public/dm7.jpg";
+import dm_support from "../../../public/dm_support.png";
+import dm_medic from "../../../public/dm_medic.png";
+import dm_crm from "../../../public/dm_crm.jpg";
+import dm_uni from "../../../public/dm_uni.png";
+
+import { useTranslations } from "next-intl";
 
 function ServiceCard() {
+  const t = useTranslations("Services");
+
   return (
     <div className={styles.serviceBlogContainer}>
       <div className={styles.firstRow}>
@@ -20,7 +24,7 @@ function ServiceCard() {
             alt="Image"
             data-load="false"
             elementtiming="system-image-block"
-            src={dm1}
+            src={dm_support}
             width="2500"
             height="2500"
             sizes="100vw"
@@ -29,11 +33,12 @@ function ServiceCard() {
             data-loader="sqs"
           />
           <div>
-            <h2 className={styles.cardTitle}>Future of business lies in AI</h2>
+            <h2 className={styles.cardTitle}>{t("imageTextTwoTitle")}</h2>
             <p className={styles.cardDesc}>
-              AI is setting the pace for how companies innovate, grow, and adapt
+            {t("imageTextTwo")}
+              {/* AI is setting the pace for how companies innovate, grow, and adapt
               to an ever-changing world. Businesses embracing AI are leading
-              tomorrow's success stories.
+              tomorrow's success stories. */}
             </p>
           </div>
         </div>
@@ -46,7 +51,7 @@ function ServiceCard() {
             alt="Image"
             data-load="false"
             elementtiming="system-image-block"
-            src={dm2}
+            src={dm_medic}
             width="2500"
             height="2500"
             sizes="100vw"
@@ -55,11 +60,12 @@ function ServiceCard() {
             data-loader="sqs"
           />
           <div>
-            <h2 className={styles.cardTitle}>AI Fuels Growth</h2>
+            <h2 className={styles.cardTitle}>{t("imageTextOneTitle")}</h2>
             <p className={styles.cardDesc}>
-              The integration of AI technologies enables businesses to scale
+            {t("imageTextOne")}
+              {/* The integration of AI technologies enables businesses to scale
               faster, foster creativity, and achieve unparalleled success in
-              competitive markets.
+              competitive markets. */}
             </p>
           </div>
         </div>
@@ -82,7 +88,7 @@ function ServiceCard() {
             alt="Image"
             data-load="false"
             elementtiming="system-image-block"
-            src={dm3}
+            src={dm_crm}
             width="2500"
             height="2500"
             sizes="100vw"
@@ -107,7 +113,7 @@ function ServiceCard() {
             alt="Image"
             data-load="false"
             elementtiming="system-image-block"
-            src={dm4}
+            src={dm_uni}
             width="2500"
             height="2500"
             sizes="100vw"
