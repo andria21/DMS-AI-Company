@@ -16,7 +16,7 @@
   background-color: hsla(0, 3%, 13%, 1);
 }
 .rightSection {
-  flex: 1; /* Take up 50% of the width */
+  width: 48%; /* Take up 50% of the width */
   /* background-color: #31363f; */
 }
 

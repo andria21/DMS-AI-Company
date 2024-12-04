@@ -60,7 +60,7 @@ function ServiceCard() {
             data-loader="sqs"
           />
           <div>
-            <h2 className={styles.cardTitle}>{t("imageTextOneTitle")}</h2>
+            <h2 className={styles.cardTitle}>{t("imageTextThreeTitle")}</h2>
             <p className={styles.cardDesc}>
             {t("imageTextOne")}
               {/* The integration of AI technologies enables businesses to scale
@@ -73,11 +73,9 @@ function ServiceCard() {
       <div className={styles.secondRow}>
         <div className={styles.rowCard}>
           <div>
-            <h2 className={styles.cardTitle}>Revolutionize With AI</h2>
+            <h2 className={styles.cardTitle}>{t("imageTextThreeTitle")}</h2>
             <p className={styles.cardDesc}>
-              AI isn’t just a tool—it’s the engine driving the reinvention of
-              industries. Adopting AI leads to breakthroughs in efficiency and
-              customer experience.
+            {t("imageTextThree")}
             </p>
           </div>
           <Image
@@ -99,10 +97,9 @@ function ServiceCard() {
         </div>
         <div className={styles.rowCard}>
           <div>
-            <h2 className={styles.cardTitle}>Success With AI</h2>
+            <h2 className={styles.cardTitle}>{t("imageTextFourTitle")}</h2>
             <p className={styles.cardDesc}>
-              Early adoption of AI ensures businesses remain competitive, agile,
-              and prepared for the challenges and opportunities of the future.
+            {t("imageTextFour")}
             </p>
           </div>
           <Image

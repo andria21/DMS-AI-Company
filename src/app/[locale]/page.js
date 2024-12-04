@@ -4,7 +4,7 @@ import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import ButtonComponent from "@/components/buttonComponent/Button";
 
-import testDM from "../../../public/DM_BG.png";
+import homeDM from "../../../public/home_image.png";
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -22,9 +22,7 @@ export default function Home() {
       <div className={styles.rightSection}>
         <Image
           className={styles.homeImage}
-          src={
-            "https://images.squarespace-cdn.com/content/v1/62e7d6c0f7b4911108ec6c97/1659360968488-O9ZPETNNZFEG71SFMY92/image-asset.jpeg"
-          }
+          src={homeDM}
           width={4000}
           height={3750}
           alt="Image"

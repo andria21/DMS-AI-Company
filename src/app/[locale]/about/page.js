@@ -6,6 +6,8 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import ButtonComponent from "@/components/buttonComponent/Button";
 
+import homeDM from "../../../../public/home_image.png";
+
 function About() {
   const t = useTranslations("About");
 
@@ -35,11 +37,9 @@ function About() {
         </div>
       </div>
       <div className={styles.AboutSectionContainer}>
-        <div >
+        <div>
           <div className={styles.aboutSectionQuote}>
-            <h1 className={styles.quote}>
-            {t("quoteOne")}
-            </h1>
+            <h1 className={styles.quote}>{t("quoteOne")}</h1>
             <p className={styles.companyName}>{t("title")}</p>
           </div>
           <div className={styles.customHr}></div>
@@ -47,14 +47,12 @@ function About() {
             <Image
               className={styles.blogImage}
               data-stretch="true"
-              data-src="https://images.squarespace-cdn.com/content/v1/62e7d6c0f7b4911108ec6c97/1659360968488-O9ZPETNNZFEG71SFMY92/image-asset.jpeg"
-              data-image="https://images.squarespace-cdn.com/content/v1/62e7d6c0f7b4911108ec6c97/1659360968488-O9ZPETNNZFEG71SFMY92/image-asset.jpeg"
               data-image-dimensions="2500x2500"
               data-image-focal-point="0.5,0.5"
               alt="Image"
               data-load="false"
               elementtiming="system-image-block"
-              src="https://images.squarespace-cdn.com/content/v1/62e7d6c0f7b4911108ec6c97/1659360968488-O9ZPETNNZFEG71SFMY92/image-asset.jpeg"
+              src={homeDM}
               width="2500"
               height="2500"
               sizes="100vw"
@@ -71,9 +69,7 @@ function About() {
           </div>
           <div className={styles.customHr}></div>
           <div className={styles.joinUsContainer}>
-            <h1 className={styles.quote}>
-            {t("quoteTwo")}
-            </h1>
+            <h1 className={styles.quote}>{t("quoteTwo")}</h1>
             <ButtonComponent
               to={"/services"}
               buttonPlaceholder={t("workTogetherButton")}

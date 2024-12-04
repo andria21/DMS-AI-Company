@@ -37,7 +37,7 @@
 .cardDesc {
   font-weight: 300;
   text-align: left;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 
@@ -62,7 +62,7 @@
     flex-direction: column-reverse;
   }
   .serviceBlogContainer {
-    margin-bottom: 0px;
+    margin-bottom: 50px;
   }
 }
 
