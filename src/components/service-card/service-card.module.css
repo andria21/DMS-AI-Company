@@ -26,7 +26,7 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .cardTitle {
@@ -46,3 +46,40 @@
   width: 352px;
   height: 335px;
 }
+
+@media (max-width: 1678px) {
+  .firstRow, .secondRow {
+    flex-direction: column;
+  }
+  .rowCard {
+    flex-direction: column;
+  }
+  .serviceBlogImage {
+    width: 100%;
+  }
+  .secondRow .rowCard {
+    flex-direction: column-reverse;
+  }
+  .serviceBlogContainer {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .cardDesc {
+    font-size: 11px;
+  }
+  .rowCard {
+    gap: 10px;
+  }
+}
+
+/* @media (max-width: 365px) {
+  .serviceBlogImage {
+    width: 250px;
+  }
+} */

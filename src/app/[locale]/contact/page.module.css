@@ -2,7 +2,7 @@
   display: flex;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  height: 100vh;
+
   width: 100%;
   padding: 300px 200px;
   justify-content: space-between;
@@ -39,9 +39,6 @@
   padding-right: 5px;
 }
 
-
-
-
 .formContainer {
   width: 50%;
   display: flex;
@@ -63,7 +60,6 @@
 .label {
   margin-bottom: 4px;
   font-size: 14px;
-  
 }
 
 .input {
@@ -99,6 +95,7 @@
   background-color: inherit;
   cursor: pointer;
   width: 20%;
+  min-width: 150px;
 }
 .submitButton:hover {
   background-color: hsla(27, 18%, 66%, 1);
@@ -106,7 +103,48 @@
   color: #000000;
 }
 
-
 .input:hover {
   background-color: #ccc;
+}
+
+@media (max-width: 1530px) {
+  .contactContainer {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .contactContainer {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    gap: 100px;
+  }
+  .contactInfoContainer,
+  .formContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 512px) {
+  .contactInfoContainer {
+    text-align: center;
+  }
+  .contactContainer {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .formContainer {
+    align-items: center;
+  }
 }

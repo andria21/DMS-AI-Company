@@ -35,12 +35,14 @@ function About() {
         </div>
       </div>
       <div className={styles.AboutSectionContainer}>
-        <div className={styles.aboutSectionQuote}>
-          <h1 className={styles.quote}>
-            “Join the movement with DM AI Bots—your ultimate management
-            solution!”
-          </h1>
-          <p className={styles.companyName}>DM's AI Automation Company</p>
+        <div >
+          <div className={styles.aboutSectionQuote}>
+            <h1 className={styles.quote}>
+              “Join the movement with DM AI Bots—your ultimate management
+              solution!”
+            </h1>
+            <p className={styles.companyName}>DM's AI Automation Company</p>
+          </div>
           <div className={styles.customHr}></div>
           <div className={styles.blogContainer}>
             <Image

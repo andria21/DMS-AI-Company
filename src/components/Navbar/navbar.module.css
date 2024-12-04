@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  z-index: 99999;
 }
 
 .socialsContainer {
@@ -56,23 +57,22 @@
 }
 
 .hamburgerLinksContainer {
-  position: fixed;
+  opacity: 0; /* Hidden by default */
+  visibility: hidden; /* Make it non-interactable */
+  transform: scale(0.95); /* Slightly smaller */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  position: fixed; /* Fixed to the viewport */
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
+  display: flex; /* Prepare the layout */
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
   background-color: hsla(0, 3%, 13%, 1);
-  z-index: 100;
-  overflow: hidden;
-  transition: top 0.4s ease;
-  opacity: 0; /* Initially hidden */
-  transform: scale(0.95); /* Slightly smaller */
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  /* z-index: -1; */
 }
 
 .bar {
@@ -89,7 +89,6 @@
   padding: 10px;
   background-color: transparent;
   border: none;
-  z-index: 999;
 }
 
 .closeBtn {
@@ -210,7 +209,16 @@
   }
   .active .hamburgerLinksContainer {
     opacity: 1; /* Fully visible */
-    transform: scale(1);
+    visibility: visible; /* Make it interactable */
+    transform: scale(1); /* Restore original size */
+    z-index: 100; /* Bring it to the front */
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  .hamburgerLinksContainer.close {
+    opacity: 0; /* Fade out */
+    transform: scale(0.95); /* Shrink */
+    visibility: hidden; /* Hidden after transition */
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0s linear 0.4s; /* Visibility changes after animation ends */
   }
   .langSelectorSmall {
     display: block;

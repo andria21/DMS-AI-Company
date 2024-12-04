@@ -36,7 +36,7 @@ function Services(props) {
         </div>
       </div>
       <div className={styles.servicesSectionContainer}>
-        <div>
+      <div className={styles.aboutSectionQuote}>
           <h1 className={styles.quote}>
             Smart businesses invest in smarter AI.
           </h1>

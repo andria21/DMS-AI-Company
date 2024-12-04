@@ -39,14 +39,13 @@ function Navbar() {
         isMobileMenuOpen ? styles.active : ""
       }`}
     >
-
-      <label className={styles.burger} >
-      <input type="checkbox" />
-      <div className={styles.checkmark} onClick={toggleMobileMenu}>
-        <span></span>
-        <span></span>
-      </div>
-    </label>
+      <label className={styles.burger}>
+        <input type="checkbox" checked={isMobileMenuOpen} onChange={() => {}} />
+        <div className={styles.checkmark} onClick={toggleMobileMenu}>
+          <span></span>
+          <span></span>
+        </div>
+      </label>
 
       <div className={styles.linksContainer}>
         <Link className={styles.link} href={"/about"}>
@@ -62,21 +61,37 @@ function Navbar() {
 
       <div
         className={`${styles.hamburgerLinksContainer} ${
-          isMobileMenuOpen ? styles.active : ""
+          isMobileMenuOpen ? styles.active : styles.close
         }`}
       >
-        <Link className={styles.link} href={"/about"}>
+        <Link
+          className={styles.link}
+          href={"/about"}
+          onClick={() => setIsMobileMenuOpen(false)}
+        >
           {t("about")}
         </Link>
-        <Link className={styles.link} href={"/services"}>
+        <Link
+          className={styles.link}
+          href={"/services"}
+          onClick={() => setIsMobileMenuOpen(false)}
+        >
           {t("services")}
         </Link>
-        <Link className={styles.link} href={"/contact"}>
+        <Link
+          className={styles.link}
+          href={"/contact"}
+          onClick={() => setIsMobileMenuOpen(false)}
+        >
           {t("contact")}
         </Link>
       </div>
 
-      <Link className={styles.logo} href={"/"}>
+      <Link
+        className={styles.logo}
+        href={"/"}
+        onClick={() => setIsMobileMenuOpen(false)}
+      >
         DM
       </Link>
 
