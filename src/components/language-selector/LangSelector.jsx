@@ -37,9 +37,8 @@ export default function LangSelector() {
         onChange={handleLanguageChange}
         className="language-dropdown"
       >
-        <option value="en">En</option>
         <option value="ka">Ka</option>
-        <option value="ru">Ru</option>
+        <option value="en">En</option>
       </select>
     </div>
   );

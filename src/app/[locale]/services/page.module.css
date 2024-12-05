@@ -29,9 +29,9 @@
 }
 
 .infoContainer {
-  margin-top: 350px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-top: 300px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 .infoHeading {
   color: hsla(27, 18%, 66%, 1);
@@ -45,6 +45,7 @@
   font-weight: 200;
   line-height: 1.9;
   margin-bottom: 60px;
+  color: #ccc;
 }
 
 .servicesSectionContainer {
@@ -88,7 +89,7 @@
     /* width: 47%; */
   }
   .infoContainer {
-    margin-top: 200px;
+    margin-top: 250px;
   }
   .infoHeading {
     font-size: 44px;
@@ -132,6 +133,8 @@
 @media (max-width: 1362px) {
   .infoContainer {
     margin-top: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
   .homeImage {
     height: 100vh;

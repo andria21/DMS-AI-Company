@@ -32,11 +32,12 @@
 .cardTitle {
   color: hsla(27, 18%, 66%, 1);
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .cardDesc {
   font-weight: 300;
   text-align: left;
+  font-size: 14px;
   /* margin-bottom: 60px; */
 }
 
@@ -50,9 +51,11 @@
 @media (max-width: 1678px) {
   .firstRow, .secondRow {
     flex-direction: column;
+    gap: 50px;
   }
   .rowCard {
     flex-direction: column;
+    gap: 10px;
   }
   .serviceBlogImage {
     width: 100%;

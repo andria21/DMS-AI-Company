@@ -46,6 +46,7 @@
   font-weight: 200;
   line-height: 1.9;
   margin-bottom: 60px;
+  color: #ccc;
 }
 
 .AboutSectionContainer {
@@ -71,6 +72,7 @@
   padding: 0px 260px;
   margin-top: 40px;
   margin-bottom: 40px;
+  gap: 20px;
 }
 .quote {
   font-weight: 300;
@@ -173,6 +175,20 @@
   .AboutSectionContainer {
     /* padding: 0px 100px; */
   }
+  .infoContainer {
+    margin-left: 135px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .blogContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 60px 0px;
+    /* overflow: scroll; */
+  }
 }
 
 @media (max-width: 1060px) {
@@ -192,15 +208,6 @@
   }
   .rightSection {
     width: 100%;
-  }
-
-  .blogContainer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 60px 0px;
-    /* overflow: scroll; */
   }
 
   .infoContainer {
@@ -237,6 +244,9 @@
   .companyName {
     font-size: 14px;
   }
+  .blogContainer {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 638px) {
@@ -250,22 +260,24 @@
   .textOne {
     font-size: 11px;
   }
+
+  .blogImage {
+    width: 300px;
+  }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 450px) {
   .quote {
     padding: 0px 50px;
     font-size: 28px;
   }
-  .blogImage {
-    width: 300px;
-  }
+
   .textOne {
     /* overflow-y: scroll; */
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 450px) {
   .leftSection {
     padding-right: 20px;
     padding-left: 20px;

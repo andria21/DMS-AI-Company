@@ -55,7 +55,7 @@ function Contact() {
         <div className={styles.customHr}></div>
         <div className={styles.mailInfo}>
           <p>email: dmaiautomation@gmail.com</p>
-          <p>phone: +(995)555-55-55-55</p>
+          <p>phone: +(995)592-162-616</p>
         </div>
         <Link
           className={styles.socials}
@@ -82,7 +82,7 @@ function Contact() {
           />
         </Link>
       </dir>
-      <form className={styles.formContainer} onSubmit={handleMessageSubmit}>
+      {/* <form className={styles.formContainer} onSubmit={handleMessageSubmit}>
         <div className={styles.row}>
           <div className={styles.column}>
             <label className={styles.label}>
@@ -147,7 +147,7 @@ function Contact() {
         </div>
 
         <button className={styles.submitButton}>Submit</button>
-      </form>
+      </form> */}
       {/* {isLoading && <p>Loading...</p>} */}
     </div>
   );

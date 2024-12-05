@@ -60,7 +60,7 @@ function ServiceCard() {
             data-loader="sqs"
           />
           <div>
-            <h2 className={styles.cardTitle}>{t("imageTextThreeTitle")}</h2>
+            <h2 className={styles.cardTitle}>{t("imageTextOneTitle")}</h2>
             <p className={styles.cardDesc}>
             {t("imageTextOne")}
               {/* The integration of AI technologies enables businesses to scale

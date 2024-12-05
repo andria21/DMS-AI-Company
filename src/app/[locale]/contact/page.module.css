@@ -4,9 +4,11 @@
   font-style: normal;
 
   width: 100%;
-  padding: 300px 200px;
-  justify-content: space-between;
+  padding: 300px 100px;
+  justify-content: center;
+  align-items: center;
   gap: 180px;
+  text-align: center;
 }
 .customHr {
   border: none;
@@ -27,8 +29,9 @@
   margin-bottom: 30px;
 }
 .contactInfoP {
-  font-weight: 300;
+  font-weight: 200;
   margin-bottom: 60px;
+  color: #ccc;
 }
 .mailInfo {
   margin-top: 30px;
@@ -130,6 +133,15 @@
   }
 }
 
+@media (max-width: 600px) {
+  .contactInfoHeading {
+    font-size: 32px;
+  }
+  .contactInfoP {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 512px) {
   .contactInfoContainer {
     text-align: center;
@@ -146,5 +158,14 @@
 @media (max-width: 430px) {
   .formContainer {
     align-items: center;
+  }
+}
+
+@media (max-width: 370px) {
+  .contactInfoHeading {
+    font-size: 24px;
+  }
+  .contactInfoP {
+    font-size: 11px;
   }
 }
