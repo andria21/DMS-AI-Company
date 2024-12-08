@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Georgian:wght@100..900&display=swap');
+
 .homeContainer {
   /* height: 100vh; */
   display: flex;
@@ -14,6 +16,8 @@
   padding-top: 300px;
   padding-left: 200px;
   padding-right: 200px;
+
+
   /* width: 100%;
   max-width: 1020px; */
   /* padding: 5%;
@@ -58,10 +62,16 @@
 }
 .infoParagraph {
   font-size: 1rem;
-  font-weight: 200;
+  /* font-weight: 200; */
   line-height: 1.9;
   margin-bottom: 60px;
   color: #ccc;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 @media (max-width: 1746px) {

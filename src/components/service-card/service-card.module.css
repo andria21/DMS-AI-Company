@@ -1,3 +1,4 @@
+
 .serviceBlogContainer {
   display: flex;
   flex-direction: column;
@@ -44,6 +45,12 @@
   font-weight: 300;
   text-align: left;
   font-size: 14px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
   /* margin-bottom: 60px; */
 }
 
