@@ -32,17 +32,28 @@ function ServiceCard() {
             decoding="async"
             data-loader="sqs"
           />
-          <div>
+          <div className={styles.description}>
             <h2 className={styles.cardTitle}>{t("imageTextTwoTitle")}</h2>
             <p className={styles.cardDesc}>
-            {t("imageTextTwo")}
+              {t("imageTextTwo")}
               {/* AI is setting the pace for how companies innovate, grow, and adapt
               to an ever-changing world. Businesses embracing AI are leading
               tomorrow's success stories. */}
             </p>
           </div>
         </div>
+      </div>
+      <div className={styles.secondRow}>
         <div className={styles.rowCard}>
+          <div>
+            <h2 className={styles.cardTitle}>{t("imageTextOneTitle")}</h2>
+            <p className={styles.cardDesc}>
+              {t("imageTextOne")}
+              {/* The integration of AI technologies enables businesses to scale
+              faster, foster creativity, and achieve unparalleled success in
+              competitive markets. */}
+            </p>
+          </div>
           <Image
             className={styles.serviceBlogImage}
             data-stretch="true"
@@ -59,25 +70,10 @@ function ServiceCard() {
             decoding="async"
             data-loader="sqs"
           />
-          <div>
-            <h2 className={styles.cardTitle}>{t("imageTextOneTitle")}</h2>
-            <p className={styles.cardDesc}>
-            {t("imageTextOne")}
-              {/* The integration of AI technologies enables businesses to scale
-              faster, foster creativity, and achieve unparalleled success in
-              competitive markets. */}
-            </p>
-          </div>
         </div>
       </div>
       <div className={styles.secondRow}>
         <div className={styles.rowCard}>
-          <div>
-            <h2 className={styles.cardTitle}>{t("imageTextThreeTitle")}</h2>
-            <p className={styles.cardDesc}>
-            {t("imageTextThree")}
-            </p>
-          </div>
           <Image
             className={styles.serviceBlogImage}
             data-stretch="true"
@@ -94,13 +90,17 @@ function ServiceCard() {
             decoding="async"
             data-loader="sqs"
           />
+          <div>
+            <h2 className={styles.cardTitle}>{t("imageTextThreeTitle")}</h2>
+            <p className={styles.cardDesc}>{t("imageTextThree")}</p>
+          </div>
         </div>
+      </div>
+      <div className={styles.firstRow}>
         <div className={styles.rowCard}>
           <div>
             <h2 className={styles.cardTitle}>{t("imageTextFourTitle")}</h2>
-            <p className={styles.cardDesc}>
-            {t("imageTextFour")}
-            </p>
+            <p className={styles.cardDesc}>{t("imageTextFour")}</p>
           </div>
           <Image
             className={styles.serviceBlogImage}

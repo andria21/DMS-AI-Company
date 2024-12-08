@@ -5,13 +5,14 @@
   justify-content: space-between;
   align-items: center;
   text-align: left;
-  gap: 50px;
+  gap: 100px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 200;
 }
 
-.firstRow, .secondRow{
+.firstRow,
+.secondRow {
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -25,8 +26,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 200px;
   /* flex: 1; */
+  padding: 0px 250px;
+}
+
+.description {
+  /* padding: 0px 200px; */
 }
 
 .cardTitle {
@@ -41,14 +47,37 @@
   /* margin-bottom: 60px; */
 }
 
-
 .serviceBlogImage {
   object-fit: cover;
   width: 352px;
   height: 335px;
 }
 
-@media (max-width: 1678px) {
+@media (max-width: 1485px) {
+  .rowCard {
+    padding: 0px 200px;
+  }
+}
+
+@media (max-width: 1414px) {
+  .rowCard {
+    padding: 0px 150px;
+  }
+}
+
+@media (max-width: 1298px) {
+  .rowCard {
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .rowCard {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 1034px) {
   .firstRow, .secondRow {
     flex-direction: column;
     gap: 50px;
@@ -56,6 +85,7 @@
   .rowCard {
     flex-direction: column;
     gap: 10px;
+    padding: 0px;
   }
   .serviceBlogImage {
     width: 100%;
@@ -66,6 +96,12 @@
   }
   .serviceBlogContainer {
     margin-bottom: 50px;
+  }
+  .serviceBlogContainer > :nth-child(3) .rowCard{
+    flex-direction: column;
+  }
+  .serviceBlogContainer > :nth-child(4) .rowCard{
+    flex-direction: column-reverse;
   }
 }
 
