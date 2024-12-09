@@ -10,6 +10,7 @@ import { setRequestLocale } from "next-intl/server";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Head from "next/head";
+import ChatWidget from "@/components/dm-bot/Dmbot";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -52,6 +53,7 @@ export default async function RootLayout({ children, params }) {
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
+          <ChatWidget />
           <Footer />
         </NextIntlClientProvider>
       </body>

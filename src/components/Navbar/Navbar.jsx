@@ -12,7 +12,7 @@ import LangSelector from "../language-selector/LangSelector";
 
 import HamburgerSVG from "../../../public/hamburgerSVG.svg";
 import NavbarCloseSVG from "../../../public/closeSVG.svg";
-import Hamburger from "../hamburger/Hamburger";
+import Hamburger from "../dm-bot/Dmbot";
 
 function Navbar() {
   const t = useTranslations("Navbar");
