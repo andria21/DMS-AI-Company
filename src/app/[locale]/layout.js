@@ -53,9 +53,9 @@ export default async function RootLayout({ children, params }) {
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
-          {/* <ChatWidget /> */}
           <Footer />
         </NextIntlClientProvider>
+        <ChatWidget />
       </body>
     </html>
   );

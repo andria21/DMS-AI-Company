@@ -4,7 +4,7 @@ import styles from "./service-card.module.css";
 
 import dm_support from "../../../public/dm_bot_noBG.png";
 import dm_medic from "../../../public/dm_medic_noBG.png";
-import dm_crm from "../../../public/dm_crm_noBG.png";
+import dm_crm from "../../../public/DM_CRM_noBG_new.png";
 import dm_uni from "../../../public/dm_uni_noBG.png";
 
 import { useTranslations } from "next-intl";
