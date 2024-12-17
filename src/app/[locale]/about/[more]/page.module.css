@@ -24,3 +24,35 @@
   font-weight: 300;
   font-size: 38px;
 }
+
+@media (max-width: 1082px) {
+  .textContainer {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+}
+
+@media (max-width: 886px) {
+  .learnMoreContainer {
+    padding-top: 200px;
+    height: auto;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .textContainer {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .textContainer {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .textHeading {
+    font-size: 32px;
+  }
+}
