@@ -62,8 +62,12 @@ function About() {
             />
             <div className={styles.blogTextContainer}>
               <div className={styles.textOne}>
-                <p>{t("textOne")}</p>
-                <p>{t("textTwo")}</p>
+                <h3 className={styles.textOneDescription}>{t("textOne")}</h3>
+                <ButtonComponent
+                  to={"/about/learn-more"}
+                  buttonPlaceholder={t("learnMoreButton")}
+                ></ButtonComponent>
+                {/* <p>{t("textTwo")}</p> */}
               </div>
             </div>
           </div>

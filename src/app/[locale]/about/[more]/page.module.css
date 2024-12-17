@@ -1,0 +1,26 @@
+.learnMoreContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100svh;
+  padding-top: 300px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-right: 300px;
+  padding-left: 300px;
+  text-align: center;
+}
+
+.textHeading {
+  color: hsla(27, 18%, 66%, 1);
+  font-weight: 300;
+  font-size: 38px;
+}

@@ -126,4 +126,7 @@
   .leftSection {
     text-align: center;
   }
+  .infoHeading {
+    font-size: 28px;
+  }
 }
