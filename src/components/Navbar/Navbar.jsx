@@ -111,7 +111,7 @@ function Navbar() {
         <LangSelector />
         <Link
           className={styles.socials}
-          href={"https://www.facebook.com/profile.php?id=61568200016744"}
+          href={"https://www.linkedin.com/company/dm-s-ai-automation-agency/"}
         >
           <Image
             className={styles.socialLogo}
