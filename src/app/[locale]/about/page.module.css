@@ -44,7 +44,7 @@
 }
 .infoParagraph {
   font-size: 16px;
-  font-weight: 200;
+  /* font-weight: 200; */
   line-height: 1.9;
   margin-bottom: 60px;
   font-family: var(--font-secondary);
@@ -155,7 +155,7 @@
   }
   .infoParagraph {
     font-size: 14px;
-    font-weight: 200;
+    /* font-weight: 200; */
     line-height: 1.9;
     margin-bottom: 40px;
   }
