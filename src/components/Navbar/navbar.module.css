@@ -1,12 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url('https://fonts.cdnfonts.com/css/minerva-modern-font-family'); */
+@import url('https://fonts.cdnfonts.com/css/omnes-2');
+
+@font-face {
+  font-family: minerva-modern;
+  src: url(https://use.typekit.net/af/2d15e1/00000000000000003b9afd25/27/l?subset_id=2&fvd=n4&v=3);
+}
 
 .navbarContainer {
   position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 87px 135px;
+  padding: 77px 135px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -28,15 +35,20 @@
 }
 
 .logo {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 200; 
   font-style: normal;
+  */
+  font-family: minerva-modern;
+  font-style: normal;
+  /* font-weight: 600; */
+  letter-spacing: 3px;
   font-size: 3.375rem;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-9%, -50%);
+  transform: translate(-45%, -50%);
   color: #ffffff;
   z-index: 99999;
 }
@@ -45,6 +57,9 @@
   color: #ffffff;
   /* font-weight: bold; */
   font-size: 0.875rem;
+  font-family: 'Omnes', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.9x;
 }
 
 .socialLogo {
@@ -125,7 +140,6 @@
   font-size: 20px;
   user-select: none;
   z-index: 99999;
-  
 }
 
 .checkmark {
@@ -134,7 +148,6 @@
   left: 0;
   height: 1.5em;
   width: 40px;
-
 }
 
 .checkmark span {
@@ -227,7 +240,8 @@
     opacity: 0; /* Fade out */
     transform: scale(0.95); /* Shrink */
     visibility: hidden; /* Hidden after transition */
-    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0s linear 0.4s; /* Visibility changes after animation ends */
+    transition: opacity 0.4s ease, transform 0.4s ease,
+      visibility 0s linear 0.4s; /* Visibility changes after animation ends */
   }
   .langSelectorSmall {
     display: block;
@@ -239,7 +253,19 @@
 }
 
 @media (max-width: 450px) {
-  /* .navbarContainer {
-    padding: 30px 20px;
-  } */
+  .navbarContainer {
+    /* padding: 30px 20px; */
+    padding-top: 20px;
+    background-color: hsla(0, 3%, 13%, 1);
+    padding-bottom: 20px;
+  }
+  .burger {
+    padding-top: 10px;
+  }
+  .langSelectorSmall {
+    padding-top: 10px;
+  }
+   /* .navbarContainer {
+    background-color: hsla(0, 3%, 13%, 1);
+   } */
 }

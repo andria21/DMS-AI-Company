@@ -3,7 +3,7 @@
 
 .contactContainer {
   display: flex;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-secondary);
   font-style: normal;
 
   width: 100%;
@@ -26,6 +26,7 @@
 }
 
 .contactInfoHeading {
+  font-family: var(--font-primary);
   font-size: 45px;
   color: hsla(27, 18%, 66%, 1);
   font-weight: 400;
@@ -34,9 +35,9 @@
 .contactInfoP {
   font-weight: 200;
   margin-bottom: 60px;
-  color: #ccc;
+  /* color: #ccc;
   font-family: "Noto Sans Georgian", sans-serif;
-  font-optical-sizing: auto;
+  font-optical-sizing: auto; */
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
@@ -45,7 +46,7 @@
 .mailInfo {
   margin-top: 30px;
   margin-bottom: 50px;
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 .socials {
   padding-right: 5px;

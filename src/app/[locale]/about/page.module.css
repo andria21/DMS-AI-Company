@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Georgian:wght@100..900&display=swap");
 .aboutContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-secondary);
   font-style: normal;
 }
 .mainContainer {
@@ -13,11 +12,11 @@
 }
 
 .leftSection {
-  width: 52%;
+  width: 50%;
   background-color: hsla(0, 3%, 13%, 1);
 }
 .rightSection {
-  flex: 1; /* Take up 50% of the width */
+  flex: 1;
   background-color: #31363f;
   height: 100vh;
 }
@@ -38,6 +37,7 @@
 .infoHeading {
   color: hsla(27, 18%, 66%, 1);
   font-size: 49px;
+  font-family: var(--font-primary);
   font-weight: 300;
   line-height: 1.1;
   margin-bottom: 30px;
@@ -47,8 +47,7 @@
   font-weight: 200;
   line-height: 1.9;
   margin-bottom: 60px;
-  color: #ccc;
-  font-family: "Noto Sans Georgian", sans-serif;
+  font-family: var(--font-secondary);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -83,9 +82,11 @@
 .quote {
   font-weight: 300;
   font-size: 45px;
+  font-family: var(--font-primary);
 }
 .companyName {
   margin-bottom: 100px;
+  font-family: var(--font-secondary);
 }
 
 .customHr {
@@ -106,7 +107,7 @@
   gap: 50px;
   color: #ffffff;
   font-size: 16px;
-  font-weight: 200;
+  /* font-weight: 200; */
 }
 
 .blogImage {
@@ -133,7 +134,7 @@
 }
 .textOneDescription {
   font-weight: 300;
-  color: #ccc;
+  /* color: #ccc; */
 }
 
 .joinUsContainer {
@@ -177,6 +178,9 @@
   }
   .companyName {
     margin-bottom: 50px;
+  }
+  .infoContainer {
+    margin-top: 270px;
   }
 }
 

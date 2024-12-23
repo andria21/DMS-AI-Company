@@ -37,6 +37,7 @@
 }
 
 .cardTitle {
+  font-family: var(--font-primary);
   color: hsla(27, 18%, 66%, 1);
   font-weight: 400;
   margin-bottom: 10px;
@@ -45,9 +46,11 @@
   font-weight: 300;
   text-align: left;
   font-size: 16px;
-  color: #dadada;
+  font-family: var(--font-secondary);
+  letter-spacing: 0.3px;
+  /* color: #dadada;
   font-family: "Noto Sans Georgian", sans-serif;
-  font-optical-sizing: auto;
+  font-optical-sizing: auto; */
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
@@ -126,7 +129,7 @@
     gap: 10px;
   }
   .serviceBlogImage {
-    height: 150px;
+    height: 190px;
   }
   .description, .cardDesc, .cardTitle {
     text-align: center;

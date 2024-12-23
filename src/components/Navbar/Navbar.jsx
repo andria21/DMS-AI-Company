@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import FbSVG from "../../../public/fb.png";
 import InstaSVG from "../../../public/instaLogo.png";
+import LinkedinSVG from "../../../public/linkedinLogoo.png";
 
 import { useTranslations } from "next-intl";
 import LangSelector from "../language-selector/LangSelector";
@@ -13,6 +14,13 @@ import LangSelector from "../language-selector/LangSelector";
 import HamburgerSVG from "../../../public/hamburgerSVG.svg";
 import NavbarCloseSVG from "../../../public/closeSVG.svg";
 import Hamburger from "../dm-bot/Dmbot";
+
+import localFont from "next/font/local";
+
+const minervaModern = localFont({
+  src: "../../app/[locale]/fonts/MinervaModern Black.ttf",
+  weight: "100",
+});
 
 function Navbar() {
   const t = useTranslations("Navbar");
@@ -88,7 +96,7 @@ function Navbar() {
       </div>
 
       <Link
-        className={styles.logo}
+        className={`${styles.logo} `}
         href={"/"}
         onClick={() => setIsMobileMenuOpen(false)}
       >
@@ -101,6 +109,18 @@ function Navbar() {
 
       <div className={styles.socialsContainer}>
         <LangSelector />
+        <Link
+          className={styles.socials}
+          href={"https://www.facebook.com/profile.php?id=61568200016744"}
+        >
+          <Image
+            className={styles.socialLogo}
+            src={LinkedinSVG}
+            height={20}
+            width={20}
+            alt="Facebook Logo"
+          />
+        </Link>
         <Link
           className={styles.socials}
           href={"https://www.instagram.com/dmsaiautomationagency/"}

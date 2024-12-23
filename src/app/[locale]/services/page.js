@@ -45,7 +45,7 @@ function Services(props) {
           <ServiceCard />
           <div className={styles.customHr}></div>
           <div className={styles.joinUsContainer}>
-            <h1 className={styles.quote}>
+            <h1 className={styles.quoteTwo}>
               {t("quoteTwo")}
             </h1>
             <ButtonComponent

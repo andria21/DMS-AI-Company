@@ -5,7 +5,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-secondary);
   font-style: normal;
 }
 .mainContainer {
@@ -14,11 +14,11 @@
 }
 
 .leftSection {
-  width: 52%;
+  width: 50%;
   background-color: hsla(0, 3%, 13%, 1);
 }
 .rightSection {
-  width: 48%; /* Take up 50% of the width */
+  width: 50%;
   /* background-color: #31363f; */
 }
 
@@ -37,6 +37,7 @@
 }
 .infoHeading {
   color: hsla(27, 18%, 66%, 1);
+  font-family: var(--font-primary);
   font-size: 49px;
   font-weight: 300;
   line-height: 1.1;
@@ -47,9 +48,10 @@
   font-weight: 200;
   line-height: 1.9;
   margin-bottom: 60px;
-  color: #ccc;
-  font-family: "Noto Sans Georgian", sans-serif;
-  font-optical-sizing: auto;
+  /* color: #ccc; */
+  /* font-family: "Noto Sans Georgian", sans-serif;
+  font-optical-sizing: auto; */
+
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
@@ -66,6 +68,16 @@
 }
 
 .quote {
+  font-family: var(--font-primary);
+  padding: 0px 260px;
+  white-space: pre-wrap;
+  font-weight: 300;
+  font-size: 45px;
+  margin-top: 40px;
+  /* margin-bottom: 40px; */
+}
+.quoteTwo {
+  font-family: var(--font-primary);
   padding: 0px 260px;
   white-space: pre-wrap;
   font-weight: 300;
@@ -75,6 +87,7 @@
 }
 .companyName {
   margin-bottom: 100px;
+  font-family: var(--font-secondary);
 }
 
 .customHr {
@@ -112,6 +125,10 @@
   }
 
   .quote {
+    padding: 0px 100px;
+    font-size: 32px;
+  }
+  .quoteTwo {
     padding: 0px 100px;
     font-size: 32px;
   }
@@ -246,6 +263,10 @@
     padding: 0px 10px;
     font-size: 20px;
   }
+  .quoteTwo {
+    padding: 0px 10px;
+    font-size: 20px;
+  }
   .infoHeading {
     /* font-size: 20px; */
     padding: 0px;
@@ -262,10 +283,17 @@
   .aboutSectionQuote {
     padding: 20px 0px;
   }
+  .homeImage {
+    object-position: 60% 0%;
+  }
 }
 
 @media (max-width: 440px) {
   .quote {
+    padding: 0px 50px;
+    font-size: 28px;
+  }
+  .quoteTwo {
     padding: 0px 50px;
     font-size: 28px;
   }
@@ -287,6 +315,9 @@
   .quote {
     padding: 0px;
   }
+  .quoteTwo {
+    padding: 0px;
+  }
 }
 
 
@@ -295,6 +326,9 @@
     font-size: 24px;
   }
   .quote {
+    font-size: 24px;
+  }
+  .quoteTwo {
     font-size: 24px;
   }
 }
