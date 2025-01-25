@@ -7,7 +7,7 @@ export default function ChatWidget() {
     const script = document.createElement("script");
     script.innerHTML = `
       window.VG_CONFIG = {
-        ID: "4tcvfdywljvitdv0",
+        ID: "shm910vdzj56mily",
         region: 'eu',
         render: 'bottom-right',
         stylesheets: [
@@ -31,3 +31,4 @@ export default function ChatWidget() {
 
   return <div id="VG_OVERLAY_CONTAINER" />;
 }
+// 4tcvfdywljvitdv0 dm-bot
