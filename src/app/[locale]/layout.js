@@ -46,6 +46,7 @@ export default async function RootLayout({ children, params }) {
 
   return (
     <html lang={locale}>
+    <meta name="facebook-domain-verification" content="5liur6hl1vcudu4dynmd03knmd600d" />
       <body
         className={`${geistSans.variable} ${geistMono.variable}`}
         suppressHydrationWarning={true}
