@@ -48,11 +48,11 @@
   font-weight: 200;
   line-height: 1.9;
   margin-bottom: 60px;
-  /* color: #ccc; */
+  /*  */
   /* font-family: "Noto Sans Georgian", sans-serif;
   font-optical-sizing: auto; */
-
-  font-weight: 400;
+  color: #ccc;
+  font-weight: 600;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
